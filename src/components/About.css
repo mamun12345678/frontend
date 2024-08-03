@@ -1,0 +1,269 @@
+/* src/components/About.css */
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f5f7fa; /* Slightly off-white background for subtle contrast */
+}
+
+.container {
+  padding: 0 15px;
+}
+
+/* Header Styles */
+.about-header {
+  background: linear-gradient(to right, #003366, #00509e); /* Rich gradient for a more elegant look */
+  color: #fff;
+  padding: 70px 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 4rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-header:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.about-header h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.about-header .lead {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #e5e5e5;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+
+/* Content Section */
+.about-content {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 3rem;
+}
+
+.about-content:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.about-content h2 {
+  font-size: 2.4rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #003366;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.about-content p {
+  line-height: 1.9;
+  margin-bottom: 1.8rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Gallery Section */
+.gallery-section {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+}
+
+.gallery-section h2 {
+  font-size: 2.2rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.gallery-section h3 {
+  font-size: 1.7rem;
+  color: #003366;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Images Section */
+.images-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.image-card {
+  flex: 1 1 calc(33.333% - 1.5rem);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.image-card p {
+  margin: 10px;
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Videos Section */
+.videos-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.video-card {
+  flex: 1 1 calc(50% - 1.5rem);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.video-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.video-card p {
+  margin: 10px;
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-header .lead {
+    font-size: 1.1rem;
+  }
+
+  .images-gallery .image-card,
+  .videos-gallery .video-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Additional Styling for About Me and My Journey Sections */
+.about-content .section {
+  margin-bottom: 2.5rem;
+}
+
+.about-content .section-title {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #003366;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.about-content .section-text {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.about-content .section p {
+  margin-bottom: 1.5rem;
+}
+
+.about-content .section:last-child {
+  margin-bottom: 0;
+}
+
+/* Enhanced Styles for About Me Specific Enhancements */
+.about-content .about-me {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-content .about-me img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content .about-me img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.about-content .about-me-details {
+  max-width: 900px;
+  text-align: left;
+}
+
+.about-content .about-me-details h2 {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  color: #003366;
+}
+
+.about-content .about-me-details p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.9;
+}
+
+.about-content .about-me-details p:last-child {
+  margin-bottom: 0;
+}
+
+.about-content .about-me-details p.highlight {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #003366;
+}

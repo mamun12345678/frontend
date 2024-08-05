@@ -1,0 +1,139 @@
+/* General Styles for Resume Page */
+.resume {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title Styling */
+.resume-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #2d3a4b;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Contact Info Styling */
+.resume-contact {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* Card Styling */
+.resume-card {
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px; /* Space between cards */
+  width: 100%; /* Full width of the container */
+}
+
+.resume-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.resume-card .card-body {
+  padding: 30px;
+}
+
+/* Card Title Styling */
+.resume-card .card-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Card Text Styling */
+.resume-card .card-text {
+  color: #2d3a4b;
+  line-height: 1.8;
+}
+
+/* List Styling within Cards */
+.resume-card ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.resume-card ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.resume-card ul li:before {
+  content: '•';
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .resume-card .card-title {
+    font-size: 1.5rem;
+  }
+
+  .resume-card .card-text {
+    font-size: 1.1rem;
+  }
+
+  .resume-contact {
+    font-size: 1rem;
+  }
+
+  .resume-title {
+    font-size: 2.5rem;
+  }
+
+  .resume-card ul li {
+    padding-left: 25px;
+  }
+
+  .resume-card ul li:before {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .resume-card .card-title {
+    font-size: 1.25rem;
+  }
+
+  .resume-card .card-text {
+    font-size: 1rem;
+  }
+
+  .resume-contact {
+    font-size: 0.9rem;
+  }
+
+  .resume-title {
+    font-size: 2rem;
+  }
+
+  .resume-card ul li {
+    padding-left: 20px;
+  }
+
+  .resume-card ul li:before {
+    font-size: 1.2rem;
+  }
+}

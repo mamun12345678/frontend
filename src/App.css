@@ -1,0 +1,19 @@
+/* src/App.css */
+
+/* Ensure the body has some default styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Add some padding to the container */
+.container {
+  padding: 20px;
+}
+
+/* Add a custom style for the footer */
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+}

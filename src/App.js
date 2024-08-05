@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/frontend">
+    <Router basename="/">
       <NavBar />
       <Container className="mt-5">
         <Routes>

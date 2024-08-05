@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6389406.css",
-    "main.js": "/static/js/main.4d670d5f.js",
-    "static/media/eidPic.jpg": "/static/media/eidPic.d43bec61a424ad72cbd6.jpg",
-    "static/media/graduationVideo.mp4": "/static/media/graduationVideo.d61a5ff23761a6f32811.mp4",
-    "static/media/posterdayPic.jpg": "/static/media/posterdayPic.c59f2c7008a3eeab492f.jpg",
-    "static/media/posterdayPic2.jpg": "/static/media/posterdayPic2.ed3767edf88fbdc5ea31.jpg",
-    "static/media/background.jpg": "/static/media/background.a77b90b7c01e3ee9fba5.jpg",
-    "static/media/graduationPic.jpg": "/static/media/graduationPic.52b3c67b781929d91c47.jpg",
-    "static/media/theMetro.jpg": "/static/media/theMetro.bed3a5c82745bf4e6262.jpg",
-    "static/media/heroPic.jpg": "/static/media/heroPic.647846a1ed2a0895845e.jpg",
-    "index.html": "/index.html",
-    "main.e6389406.css.map": "/static/css/main.e6389406.css.map",
-    "main.4d670d5f.js.map": "/static/js/main.4d670d5f.js.map"
+    "main.css": "/frontend/static/css/main.eab5ddc9.css",
+    "main.js": "/frontend/static/js/main.47b1d99c.js",
+    "static/media/eidPic.jpg": "/frontend/static/media/eidPic.d43bec61a424ad72cbd6.jpg",
+    "static/media/graduationVideo.mp4": "/frontend/static/media/graduationVideo.d61a5ff23761a6f32811.mp4",
+    "static/media/posterdayPic.jpg": "/frontend/static/media/posterdayPic.c59f2c7008a3eeab492f.jpg",
+    "static/media/posterdayPic2.jpg": "/frontend/static/media/posterdayPic2.ed3767edf88fbdc5ea31.jpg",
+    "static/media/background.jpg": "/frontend/static/media/background.a77b90b7c01e3ee9fba5.jpg",
+    "static/media/graduationPic.jpg": "/frontend/static/media/graduationPic.52b3c67b781929d91c47.jpg",
+    "static/media/theMetro.jpg": "/frontend/static/media/theMetro.bed3a5c82745bf4e6262.jpg",
+    "static/media/heroPic.jpg": "/frontend/static/media/heroPic.647846a1ed2a0895845e.jpg",
+    "index.html": "/frontend/index.html",
+    "main.eab5ddc9.css.map": "/frontend/static/css/main.eab5ddc9.css.map",
+    "main.47b1d99c.js.map": "/frontend/static/js/main.47b1d99c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6389406.css",
-    "static/js/main.4d670d5f.js"
+    "static/css/main.eab5ddc9.css",
+    "static/js/main.47b1d99c.js"
   ]
 }

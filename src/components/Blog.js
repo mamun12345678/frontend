@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Blog.css'; // Import the CSS file for styling
 
-const API_KEY = process.env.REACT_APP_API_KEY; // Use environment variable
+const API_KEY = '62db872ec2804649be68bddc7e34b222;' // Use environment variable
 const BASE_URL = 'https://newsapi.org/v2'; // Ensure HTTPS
 const CACHE_KEY = 'techNewsCache';
 const CACHE_EXPIRY = 1000 * 60 * 60 * 24; // Cache expiry time in milliseconds (24 hours)

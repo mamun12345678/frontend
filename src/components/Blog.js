@@ -3,12 +3,13 @@ import axios from 'axios';
 import './Blog.css'; // Import the CSS file for styling
 
 const API_KEY = process.env.REACT_APP_API_KEY; // Use environment variable
-const BASE_URL = 'https://newsapi.org/v2';
+const BASE_URL = 'https://newsapi.org/v2'; // Ensure HTTPS
 const CACHE_KEY = 'techNewsCache';
 const CACHE_EXPIRY = 1000 * 60 * 60 * 24; // Cache expiry time in milliseconds (24 hours)
 
 const fetchTechNews = async () => {
   try {
+    console.log(`Fetching news from ${BASE_URL}/top-headlines`);
     const response = await axios.get(`${BASE_URL}/top-headlines`, {
       params: {
         category: 'technology',
@@ -16,9 +17,10 @@ const fetchTechNews = async () => {
         language: 'en',
       },
     });
+    console.log('Response:', response);
     return response.data.articles;
   } catch (error) {
-    console.error('Error fetching news:', error);
+    console.error('Error fetching news:', error.response ? error.response.data : error.message);
     throw error;
   }
 };
@@ -60,7 +62,7 @@ const Blog = () => {
           setArticles(filteredArticles);
         }
       } catch (error) {
-        console.error('Error fetching news:', error); // Log error for debugging
+        console.error('Error fetching news:', error.response ? error.response.data : error.message);
         setError('Error fetching news. Please try again later.');
       } finally {
         setLoading(false);
@@ -75,7 +77,12 @@ const Blog = () => {
   }
 
   if (error) {
-    return <div className="error">{error}</div>;
+    return (
+      <div className="error">
+        <p>{error}</p>
+        <pre>{JSON.stringify(error, null, 2)}</pre>
+      </div>
+    );
   }
 
   return (

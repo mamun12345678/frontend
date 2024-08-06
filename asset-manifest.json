@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc4ac100.css",
+    "main.css": "/static/css/main.fa1feaeb.css",
     "main.js": "/static/js/main.5de1f73d.js",
     "static/media/eidPic.jpg": "/static/media/eidPic.d43bec61a424ad72cbd6.jpg",
     "static/media/graduationVideo.mp4": "/static/media/graduationVideo.d61a5ff23761a6f32811.mp4",
@@ -11,11 +11,11 @@
     "static/media/theMetro.jpg": "/static/media/theMetro.bed3a5c82745bf4e6262.jpg",
     "static/media/heroPic.jpg": "/static/media/heroPic.647846a1ed2a0895845e.jpg",
     "index.html": "/index.html",
-    "main.bc4ac100.css.map": "/static/css/main.bc4ac100.css.map",
+    "main.fa1feaeb.css.map": "/static/css/main.fa1feaeb.css.map",
     "main.5de1f73d.js.map": "/static/js/main.5de1f73d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc4ac100.css",
+    "static/css/main.fa1feaeb.css",
     "static/js/main.5de1f73d.js"
   ]
 }

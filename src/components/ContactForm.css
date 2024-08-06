@@ -117,6 +117,7 @@
   margin-top: 20px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .contact-form-container {
     padding: 30px;
@@ -131,6 +132,22 @@
   }
 
   .contact-form-button {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+
+  .contact-card {
+    padding: 15px;
+  }
+
+  .contact-card .card-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-card .card-text p {
     font-size: 1rem;
   }
 }
@@ -149,6 +166,22 @@
   }
 
   .contact-form-button {
+    font-size: 0.9rem;
+  }
+
+  .contact-info {
+    margin-bottom: 15px;
+  }
+
+  .contact-card {
+    padding: 10px;
+  }
+
+  .contact-card .card-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-card .card-text p {
     font-size: 0.9rem;
   }
 }

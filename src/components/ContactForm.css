@@ -1,107 +1,154 @@
 /* Contact Form Styles */
 .contact-form-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 40px;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial, sans-serif';
+}
+
+.contact-form-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-card {
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact-card .card-title {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-card .card-text p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #343a40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card .card-text p strong {
+  color: #007bff;
+  margin-left: 5px;
+}
+
+.contact-card .card-text p svg {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-form {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contact-form .form-label {
+  font-weight: bold;
+  color: #343a40;
+  font-size: 1.1rem;
+}
+
+.contact-form .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: #f8f9fa;
+}
+
+.contact-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.contact-form-button {
+  background-color: #007bff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+}
+
+.contact-form-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 20px rgba(0, 91, 187, 0.3);
+}
+
+.contact-form-button:disabled {
+  background-color: #6c757d;
+}
+
+.alert {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 30px;
   }
-  
+
   .contact-form-title {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #343a40;
-    font-weight: bold;
     font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
   }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .contact-form .form-label {
-    font-weight: bold;
-    color: #343a40;
-    font-size: 1.1rem;
-  }
-  
+
   .contact-form .form-control {
-    border: 1px solid #ced4da;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background: #f8f9fa;
+    font-size: 0.9rem;
   }
-  
-  .contact-form .form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
-  }
-  
+
   .contact-form-button {
-    background-color: #007bff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    color: #ffffff;
-    font-weight: bold;
+    font-size: 1rem;
   }
-  
-  .contact-form-button:hover {
-    background-color: #0056b3;
-    box-shadow: 0 0 20px rgba(0, 91, 187, 0.3);
+}
+
+@media (max-width: 576px) {
+  .contact-form-container {
+    padding: 20px;
   }
-  
-  .contact-form-button:disabled {
-    background-color: #6c757d;
+
+  .contact-form-title {
+    font-size: 1.8rem;
   }
-  
-  .alert {
-    text-align: center;
-    margin-top: 20px;
+
+  .contact-form .form-control {
+    font-size: 0.85rem;
   }
-  
-  @media (max-width: 768px) {
-    .contact-form-container {
-      padding: 30px;
-    }
-  
-    .contact-form-title {
-      font-size: 1.8rem;
-    }
-  
-    .contact-form .form-control {
-      font-size: 0.9rem;
-    }
-  
-    .contact-form-button {
-      font-size: 1rem;
-    }
+
+  .contact-form-button {
+    font-size: 0.9rem;
   }
-  
-  @media (max-width: 576px) {
-    .contact-form-container {
-      padding: 20px;
-    }
-  
-    .contact-form-title {
-      font-size: 1.6rem;
-    }
-  
-    .contact-form .form-control {
-      font-size: 0.85rem;
-    }
-  
-    .contact-form-button {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

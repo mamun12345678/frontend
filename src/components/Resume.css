@@ -1,26 +1,40 @@
 /* General Styles for Resume Page */
 .resume {
   padding: 60px 20px;
-  background-color: #f7f9fc;
-  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Title Styling */
-.resume-title {
+/* Hero Section */
+.hero {
   text-align: center;
-  font-size: 3rem;
-  color: #2d3a4b;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  background: linear-gradient(to right, #3498db, #2d3a4b);
+  color: #ffffff;
+  padding: 60px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
-/* Contact Info Styling */
-.resume-contact {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #7f8c8d;
-  margin-bottom: 40px;
+.hero-subtitle {
+  font-size: 1.5rem;
   font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero-contact {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Resume Sections */
+.resume-sections {
+  margin-top: 40px;
 }
 
 /* Card Styling */
@@ -30,8 +44,7 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 30px; /* Space between cards */
-  width: 100%; /* Full width of the container */
+  margin-bottom: 40px; /* Increased space between cards */
 }
 
 .resume-card:hover {
@@ -43,97 +56,72 @@
   padding: 30px;
 }
 
-/* Card Title Styling */
-.resume-card .card-title {
+/* Section Title Styling */
+.section-title {
   font-size: 1.75rem;
   font-weight: 600;
   color: #3498db;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 12px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* Card Text Styling */
-.resume-card .card-text {
-  color: #2d3a4b;
-  line-height: 1.8;
-}
-
-/* List Styling within Cards */
-.resume-card ul {
-  padding-left: 20px;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.resume-card ul li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 12px;
-  font-size: 1.1rem;
-}
-
-.resume-card ul li:before {
-  content: '•';
+/* Icon Styling */
+.section-title svg {
+  vertical-align: middle;
+  margin-right: 10px;
   color: #3498db;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.5rem;
+}
+
+/* List Styling */
+.card-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.card-text ul li {
+  margin-bottom: 10px;
 }
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
-  .resume-card .card-title {
-    font-size: 1.5rem;
+  .resume-card .card-body {
+    padding: 20px;
   }
 
-  .resume-card .card-text {
-    font-size: 1.1rem;
-  }
-
-  .resume-contact {
-    font-size: 1rem;
-  }
-
-  .resume-title {
+  .hero-title {
     font-size: 2.5rem;
   }
 
-  .resume-card ul li {
-    padding-left: 25px;
+  .hero-subtitle {
+    font-size: 1.2rem;
   }
 
-  .resume-card ul li:before {
-    font-size: 1.3rem;
+  .hero-contact {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 576px) {
-  .resume-card .card-title {
-    font-size: 1.25rem;
-  }
-
-  .resume-card .card-text {
-    font-size: 1rem;
-  }
-
-  .resume-contact {
-    font-size: 0.9rem;
-  }
-
-  .resume-title {
+  .hero-title {
     font-size: 2rem;
   }
 
-  .resume-card ul li {
-    padding-left: 20px;
+  .hero-subtitle {
+    font-size: 1rem;
   }
 
-  .resume-card ul li:before {
-    font-size: 1.2rem;
+  .hero-contact {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
   }
 }

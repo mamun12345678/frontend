@@ -20,14 +20,14 @@ const Footer = () => {
           {/* Contact Information Section */}
           <Col xs={12} md={4} className="footer-col">
             <h5 className="footer-title">Contact Information</h5>
+            
             <p className="footer-text">
+              Phone: <a href="tel:+447394032549" className="footer-link">+447394032549</a>    </p>
+              <p className="footer-text">
               Email: <a href="mailto:o.md.abdullahalmamun@gmail.com" className="footer-link">mdabdullah.almamun.one@gmail.com</a>
             </p>
             <p className="footer-text">
-              Phone: <a href="tel:+447394032549" className="footer-link">+447394032549</a>
-            </p>
-            <p className="footer-text">
-              Location: 5 Westbourne Road, Luton, Bedfordshire
+              Location: 5 Westbourne Road, Luton | LU4 8JD
             </p>
             <div className="social-icons">
               <a href="https://www.linkedin.com/in/md-abdullah-al-mamun-aa05a5212/" className="social-icon" target="_blank" rel="noopener noreferrer">

@@ -13,7 +13,7 @@ body {
 
 /* Header Styles */
 .about-header {
-  background: linear-gradient(to right, #003366, #00509e); /* Rich gradient for a more elegant look */
+  background: linear-gradient(to right, #4b79a1, #283e51); /* Vibrant gradient for a more cohesive and elegant look */
   color: #fff;
   padding: 70px 20px;
   border-radius: 15px;
@@ -62,9 +62,9 @@ body {
 
 .about-content h2 {
   font-size: 2.4rem;
-  color: #003366;
+  color: #4b79a1;
   margin-bottom: 1.5rem;
-  border-bottom: 3px solid #003366;
+  border-bottom: 3px solid #4b79a1;
   padding-bottom: 12px;
   text-align: center;
 }
@@ -91,14 +91,14 @@ body {
 
 .gallery-section h2 {
   font-size: 2.2rem;
-  color: #003366;
+  color: #4b79a1;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .gallery-section h3 {
   font-size: 1.7rem;
-  color: #003366;
+  color: #4b79a1;
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -197,9 +197,9 @@ body {
 
 .about-content .section-title {
   font-size: 2rem;
-  color: #003366;
+  color: #4b79a1;
   margin-bottom: 1rem;
-  border-bottom: 3px solid #003366;
+  border-bottom: 3px solid #4b79a1;
   padding-bottom: 8px;
   text-align: center;
 }
@@ -249,7 +249,7 @@ body {
 .about-content .about-me-details h2 {
   margin-bottom: 1rem;
   font-size: 2.4rem;
-  color: #003366;
+  color: #4b79a1;
 }
 
 .about-content .about-me-details p {
@@ -265,5 +265,36 @@ body {
 .about-content .about-me-details p.highlight {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #003366;
+  color: #4b79a1;
+}
+
+/* Adding Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-header, .about-content, .gallery-section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.image-card, .video-card {
+  animation: slideIn 0.5s ease-in-out;
 }

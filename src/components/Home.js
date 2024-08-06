@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <section className="hero-section text-center">
         <Container className="hero-container">
-          <h1 className="hero-title">Welcome to My Website</h1>
+          <h1 className="hero-title">WELCOME TO MY WEBSITE</h1>
           <p className="hero-subtitle">Md Abdullah Al Mamun</p>
           <Button variant="primary" as={Link} to="/portfolio" className="hero-button">View My Work</Button>
         </Container>
@@ -27,7 +27,8 @@ const Home = () => {
               <Card.Img variant="top" src={aboutImage} className="card-img-top" />
               <Card.Body>
                 <Card.Title>About Me</Card.Title>
-                <Card.Text>A Brief Introduction About Myself.</Card.Text>
+                <Card.Text>...
+                </Card.Text>
                 <Button variant="primary" as={Link} to="/about">Read More</Button>
               </Card.Body>
             </Card>
@@ -37,7 +38,7 @@ const Home = () => {
               <Card.Img variant="top" src={resumeImage} className="card-img-top" />
               <Card.Body>
                 <Card.Title>Resume</Card.Title>
-                <Card.Text>View my professional experience.</Card.Text>
+                <Card.Text>...</Card.Text>
                 <Button variant="primary" as={Link} to="/resume">View Resume</Button>
               </Card.Body>
             </Card>
@@ -47,7 +48,7 @@ const Home = () => {
               <Card.Img variant="top" src={contactImage} className="card-img-top" />
               <Card.Body>
                 <Card.Title>Contact</Card.Title>
-                <Card.Text>Have any questions for me?</Card.Text>
+                <Card.Text>...</Card.Text>
                 <Button variant="primary" as={Link} to="/contact">Get in Touch</Button>
               </Card.Body>
             </Card>

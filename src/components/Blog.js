@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Blog.css'; // Import the CSS file for styling
 
-const API_KEY = '62db872ec2804649be68bddc7e34b222';
+const API_KEY = process.env.REACT_APP_API_KEY; // Use environment variable
 const BASE_URL = 'https://newsapi.org/v2';
 const CACHE_KEY = 'techNewsCache';
 const CACHE_EXPIRY = 1000 * 60 * 60 * 24; // Cache expiry time in milliseconds (24 hours)
@@ -60,7 +60,8 @@ const Blog = () => {
           setArticles(filteredArticles);
         }
       } catch (error) {
-        setError('Error fetching news');
+        console.error('Error fetching news:', error); // Log error for debugging
+        setError('Error fetching news. Please try again later.');
       } finally {
         setLoading(false);
       }
@@ -93,9 +94,9 @@ const Blog = () => {
             )}
             <div className="news-content">
               <h2 className="news-title">{article.title}</h2>
-              <div className="news-description">
-                <p>{article.content || article.description || 'No content available'}</p>
-              </div>
+              <p className="news-description">
+                {article.content || article.description || 'No content available'}
+              </p>
               <a
                 href={article.url}
                 target="_blank"

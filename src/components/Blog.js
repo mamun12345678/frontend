@@ -4,13 +4,14 @@ import './Blog.css'; // Import the CSS file for styling
 
 const API_KEY = '62db872ec2804649be68bddc7e34b222'; // Ensure no trailing characters
 const BASE_URL = 'https://newsapi.org/v2'; // Ensure HTTPS
+const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
 const CACHE_KEY = 'techNewsCache';
 const CACHE_EXPIRY = 1000 * 60 * 60 * 24; // Cache expiry time in milliseconds (24 hours)
 
 const fetchTechNews = async () => {
   try {
-    console.log(`Fetching news from ${BASE_URL}/top-headlines`);
-    const response = await axios.get(`${BASE_URL}/top-headlines`, {
+    console.log(`Fetching news from ${PROXY_URL}${BASE_URL}/top-headlines`);
+    const response = await axios.get(`${PROXY_URL}${BASE_URL}/top-headlines`, {
       params: {
         category: 'technology',
         apiKey: API_KEY,
